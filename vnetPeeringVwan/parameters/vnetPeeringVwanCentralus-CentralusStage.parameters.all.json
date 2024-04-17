@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "parVirtualWanHubResourceId": {
+      "value": "/subscriptions/8166baf5-9572-4f95-8cb7-c0b7d8f17140/resourceGroups/Bicepcode/providers/Microsoft.Network/virtualHubs/cis-vhub-centralus"
+    },
+    "parRemoteVirtualNetworkResourceId": {
+      "value": "/subscriptions/8166baf5-9572-4f95-8cb7-c0b7d8f17140/resourceGroups/Bicepcode/providers/Microsoft.Network/virtualNetworks/cis-us-ce-vnet-stage-01"
+    },
+    "parVirtualHubConnectionPrefix": {
+      "value": ""
+    },
+    "parVirtualHubConnectionSuffix": {
+      "value": "-vhc"
+    },
+    "parEnableInternetSecurity": {
+      "value": false
+    },
+    "parTelemetryOptOut": {
+      "value": false
+    }
+  }
+}

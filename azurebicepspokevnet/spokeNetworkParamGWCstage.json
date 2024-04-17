@@ -1,0 +1,43 @@
+﻿{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "parLocation": {
+        "value": "germanywestcentral"
+      },
+      "parDisableBgpRoutePropagation": {
+        "value": false
+      },
+      "parDdosProtectionPlanId": {
+        "value": ""
+      },
+      "parSpokeNetworkAddressPrefix": {
+        "value": "10.237.5.0/24"
+      },
+      "parSpokeNetworkName": {
+        "value": "cis-eu-de-vnet-stage-001"
+      },
+      "parDnsServerIps": {
+        "value": ["10.2.1.70"]
+      },
+      "parNextHopIpAddress": {
+        "value": ""
+      },
+      "parSpokeToHubRouteTableName": {
+        "value": "rtb-spoke-to-hub"
+      },
+      "parTags": {
+        "value": {
+        "business_owner": "ethen daniel raj",
+        "technical_owner": "elton germani",
+        "business_unit": "100.804.6103.71630.000.3601", 
+        "ticket": "sys-61622",
+        "os-patching": "corpis",
+        "software-patching": "corpis",
+        "backup": "no",
+        "product": "corpis",
+        "environment": "staging"
+            }
+      }
+    }
+  }

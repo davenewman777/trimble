@@ -1,0 +1,33 @@
+﻿{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "parTagBusiness_Owner": {
+            "value": "ethen daniel raj"
+        },
+        "parTagTechnical_Owner": {
+            "value": "elton germani"
+        },        
+        "parTagBusiness_Unit": {
+            "value": "100.804.6103.71630.000.3601"
+        },        
+        "parTagTicket": {
+            "value": "sys-61622"
+        },        
+        "parTagOS_patching": {
+            "value": "corpis"
+        },        
+        "parTagSoftware_patching": {
+            "value": "corpis"
+        },         
+        "parTagBackup": {
+            "value": "no"
+        },        
+        "parTagProduct": {
+            "value": "corpis"        
+        },        
+        "parTagEnvironment": {
+            "value": "staging"
+        }     
+    }
+}
