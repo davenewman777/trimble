@@ -92,11 +92,11 @@ az deployment group create --name ${NAME:0:63} --resource-group $GROUP --templat
 
 ```powershell
 # For Azure Global regions
-# Set Platform management subscripion ID as the the current subscription
-$ManagementSubscriptionId = "[your platform management subscription ID]"
+# Set Platform management subscription ID as the the current subscription
+$ManagementSubscriptionId = "8c816276-e9fb-43ee-8562-5d1d3d646968"
 
 # Set the top level MG Prefix in accordance to your environment. This example assumes default 'alz'.
-$TopLevelMGPrefix = "alz"
+$TopLevelMGPrefix = "CustomerDemo"
 
 # Parameters necessary for deployment
 $inputObject = @{
@@ -111,7 +111,7 @@ Select-AzSubscription -SubscriptionId $ManagementSubscriptionId
 # Create Resource Group - optional when using an existing resource group
 New-AzResourceGroup `
   -Name $inputObject.ResourceGroupName `
-  -Location eastus
+  -Location 'centralus'
 
 New-AzResourceGroupDeployment @inputObject
 ```

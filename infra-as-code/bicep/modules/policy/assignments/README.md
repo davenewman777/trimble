@@ -61,8 +61,8 @@ az deployment mg create --name ${NAME:0:63} --location $LOCATION --management-gr
 
 $inputObject = @{
   DeploymentName        = 'alz-PolicyDenyAssignments-{0}' -f (-join (Get-Date -Format 'yyyyMMddTHHMMssffffZ')[0..63])
-  ManagementGroupId     = 'alz-landingzones'
-  Location              = 'eastus'
+  ManagementGroupId     = 'landing_zones'
+  Location              = 'centralUS'
   TemplateParameterFile = 'infra-as-code/bicep/modules/policy/assignments/parameters/policyAssignmentManagementGroup.deny.parameters.all.json'
   TemplateFile          = "infra-as-code/bicep/modules/policy/assignments/policyAssignmentManagementGroup.bicep"
 }
@@ -128,10 +128,10 @@ az deployment mg create --name $NAME --location $LOCATION --management-group-id 
 
 $inputObject = @{
   DeploymentName        = 'alz-PolicyDineAssignments-{0}' -f (-join (Get-Date -Format 'yyyyMMddTHHMMssffffZ')[0..63])
-  Location              = 'eastus'
-  ManagementGroupId     = 'alz-landingzones'
+  ManagementGroupId     = 'landing_zones'
+  Location              = 'centralUS'
   TemplateFile          = "infra-as-code/bicep/modules/policy/assignments/policyAssignmentManagementGroup.bicep"
-  TemplateParameterFile = '@infra-as-code/bicep/modules/policy/assignments/parameters/policyAssignmentManagementGroup.dine.parameters.all.json'
+  TemplateParameterFile = "infra-as-code/bicep/modules/policy/assignments/parameters/policyAssignmentManagementGroup.dine.parameters.all.json"
 }
 
 New-AzManagementGroupDeployment @inputObject
